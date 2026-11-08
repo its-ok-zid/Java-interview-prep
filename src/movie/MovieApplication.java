@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.UUID;
 
-public class Main {
+public class MovieApplication {
     public static void main(String[] args) {
         MovieService movieService = new MovieService();
         Movie movie1 = new Movie();
