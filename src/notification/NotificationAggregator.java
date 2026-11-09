@@ -31,6 +31,12 @@ public class NotificationAggregator {
         buffer.add(notification);
     }
 
+    public void printAllNotificationsInBuffer() {
+        System.out.println("\nAll notifications stored in buffer (Chronological Order):-");
+        // buffer is a TreeSet, so it passes one Notification at a time to the lambda
+        buffer.forEach(System.out::println);
+    }
+
     /**
      * Requirement: Process/Flush the buffer chronologically up to a specific time.
      * This simulates a scheduled job that runs every X seconds to process ordered data.

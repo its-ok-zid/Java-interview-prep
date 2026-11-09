@@ -15,6 +15,7 @@ public class NotificationApplication {
         aggregator.receiveNotification(new SmsNotification("SMS-2", 2000, "Payment Failed", "555-9999"));
 
         System.out.println("Initial Buffer Size: " + aggregator.getBufferSize()); // Outputs: 3
+          aggregator.printAllNotificationsInBuffer();
 
         // 2. Implement the Cancel Usage
         // The user updates their payment method quickly, so we intercept and cancel the failure SMS!
